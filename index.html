@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="filter-buttons">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('nature')">Nature</button>
+  <button onclick="filterImages('city')">City</button>
+  <button onclick="filterImages('animals')">Animals</button>
+</div>
+
+<div class="Full-img" id="FullImgBox">
+  <span class="close" onclick="closeFullImg()">&times;</span>
+  <img src="images/img1.jpg" id="FullImg">
+  <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+  <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
+
+<div class="img-gallery">
+  <img src="images/img1.jpg" class="nature" onclick="openFullImg(0)">
+  <img src="images/img2.jpg" class="animals" onclick="openFullImg(1)">
+  <img src="images/img3.jpg" class="city" onclick="openFullImg(2)">
+  <img src="images/img4.jpg" class="nature" onclick="openFullImg(3)">
+  <img src="images/img5.jpg" class="city" onclick="openFullImg(4)">
+  <img src="images/img6.jpg" class="animals" onclick="openFullImg(5)">
+  <img src="images/img7.jpg" class="nature" onclick="openFullImg(6)">
+  <img src="images/img8.jpg" class="animals" onclick="openFullImg(7)">
+  <img src="images/img9.jpg" class="animals" onclick="openFullImg(8)">
+  <img src="images/img10.jpg" class="city" onclick="openFullImg(9)"> 
+  <img src="images/img11.jpg" class="nature" onclick="openFullImg(10)">
+  <img src="images/img12.jpg" class="nature" onclick="openFullImg(11)">
+  <img src="images/img13.jpg" class="city" onclick="openFullImg(12)">
+  <img src="images/img14.jpg" class="animals" onclick="openFullImg(13)">
+  <img src="images/img15.jpg" class="nature" onclick="openFullImg(14)">
+  <img src="images/img16.jpg" class="city" onclick="openFullImg(15)">
+  <img src="images/img17.jpg" class="city" onclick="openFullImg(16)">
+  <img src="images/img18.jpg" class="animals" onclick="openFullImg(17)">
+  <img src="images/img19.jpg" class="city" onclick="openFullImg(18)">
+  <img src="images/img20.jpg" class="animals" onclick="openFullImg(19)">
+  <img src="images/img21.jpg" class="animals" onclick="openFullImg(20)">
+  <img src="images/img22.jpg" class="nature" onclick="openFullImg(21)">
+  <img src="images/img23.jpg" class="nature" onclick="openFullImg(22)">
+  <img src="images/img24.jpg" class="nature" onclick="openFullImg(23)">
+  <img src="images/img25.jpg" class="animals" onclick="openFullImg(24)">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
